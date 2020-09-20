@@ -1,0 +1,10 @@
+{
+    "extends": "react-app",
+    "rules": {
+        "no-alert": "warn",
+        "no-console": "warn",
+        "constructor-super": "warn",
+        "space-in-parens": "warn",
+        "func-names": "warn"
+    }
+}
