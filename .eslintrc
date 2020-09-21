@@ -1,69 +1,58 @@
 {
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
-    "plugins": ["eslint-plugin"],
-    "env": {
-        "es6": true,
-        "node": true
-    },
-    // "parserOptions": {
-    //     "ecmaVersion": 6,
-    //     "ecmaFeatures": {
-    //         "jsx": true
-    //     },
-    //     "sourceType": "script"
-    // },
-    "rules": {
-        "no-alert": "warn",
-        "no-console": "warn",
-        "constructor-super": "warn",
-        "space-in-parens": "warn",
-        "func-names": "warn",
-        "indent": ["error", 4],
-        "linebreak-style": ["error", "unix"],
-        "quotes": ["error", "double"],
-        "semi": ["error", "always"],
-
-        // override default options for rules from base configurations
-        "comma-dangle": ["error", "always"],
-        "no-cond-assign": ["error", "always"],
-
-        // disable rules from base configurations
-        // "no-console": "off"
-        // "indent": [ 2, 2, {
-        //         "SwitchCase": 2
-        //     }],
-
-        // "comma-dangle": [2, "never"],
-        // "object-curly-spacing": [2, "never"],
-        // "object-shorthand": [2, "always"],
-        // "array-bracket-spacing": [2, "never"],
-        // "max-len": [2, 120, {
-        //   "ignoreStrings": true,
-        //   "ignoreTemplateLiterals": true,
-        //   "ignoreComments": true
-        // }],
-        // "consistent-return": 0,
-        // "prefer-destructuring": [2, { "array": false, "object": false }, { "enforceForRenamedProperties": false }],
-        // "prefer-object-spread": 0, // until node 8 is required
-        // "prefer-rest-params": 0, // until node 6 is required
-        // "prefer-spread": 0, // until node 6 is required
-        // "function-paren-newline": 0,
-        // "no-plusplus": 1,
-        // "no-param-reassign": 1,
-        // "no-mixed-operators": 1,
-        // "no-restricted-syntax": [2, {
-        //     "selector": "ObjectPattern",
-        //     "message": "Object destructuring is not compatible with Node v4"
-        // }],
-        // "strict": [2, "safe"],
-        // "valid-jsdoc": [2, {
-        //   "requireReturn": false,
-        //   "requireParamDescription": false,
-        //   "requireReturnDescription": false
-        // }]
-
-    }
+  "extends": [
+    "react-app",
+    "airbnb",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": ["jsx-a11y", "prettier"],
+  "rules": {
+    "no-console": "warn",
+    "semi": "error",
+    "indent": ["error", 2],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "quotes": ["error", "single"],
+    "no-alert": "error",
+    "block-scoped-var": "warn",
+    "camelcase": "warn",
+    "array-bracket-newline": "warn",
+    "no-unused-vars": "warn",
+    "no-compare-neg-zero": "warn",
+    "no-debugger": "warn",
+    "no-dupe-args": "error",
+    "no-duplicate-case": "error",
+    "no-empty": "warn",
+    "capitalized-comments": ["warn", "always"],
+    "no-ex-assign": "warn",
+    "no-extra-boolean-cast": "warn",
+    "no-extra-parens": "error",
+    "no-extra-semi": "error",
+    "no-func-assign": "warn",
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "template-curly-spacing": "warn",
+    "no-unreachable": "warn",
+    "no-invalid-regexp": "error",
+    "no-irregular-whitespace": "warn",
+    "arrow-parens": "warn",
+    "no-duplicate-imports": "error",
+    "no-dupe-keys": "warn",
+    "sort-imports": "warn",
+    "space-before-function-paren": "warn",
+    "sort-keys": "warn",
+    "multiline-ternary": "warn",
+    "id-match": "warn",
+    "eqeqeq": "warn",
+    "computed-property-spacing": "warn",
+    "consistent-this": "error",
+    "no-this-before-super": "warn",
+    "no-undefined": "warn",
+    "no-underscore-dangle": "warn",
+    "no-restricted-globals": "warn",
+    "no-multi-spaces": "warn",
+    "no-trailing-spaces": "warn",
+    "array-callback-return": "warn",
+    "space-before-blocks":"warn",
+    "space-infix-ops":"warn"
+  }
 }
